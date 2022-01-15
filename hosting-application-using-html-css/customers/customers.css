@@ -70,4 +70,28 @@
     margin: 0.2rem;
   }
   
-  
+  @media (min-width:40rem) {
+    .testimonial {
+      font-size: 1.25rem;
+      margin: 3rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .testimonial__info {
+      text-align: right;
+      padding: 0.9rem;
+      /* display: inline-block;
+      vertical-align: middle; */
+      width: 30%;
+    }
+
+    .testimonial__image-container{
+      width: 66%;
+      /* display: inline-block;
+      vertical-align: middle; */
+      box-shadow: 3px 3px 3px rgba(86, 236, 17, 0.5);
+      max-width: 556px;
+  }
+  }
