@@ -1,0 +1,38 @@
+.container {
+    margin: 20px;
+    display: grid;
+    /* grid-template-columns: 200px 2fr 20% 1fr ; */
+    grid-template-columns: repeat(4,25%);
+    /* grid-template-rows: 5rem 2.5rem; */
+    /* [row1-start]->Namind done like that */
+    grid-template-rows: [row1-start] 5rem [row1-end] 2.5rem [third-line];
+
+   
+}
+
+.el1 {
+    background: rgba(255, 154, 72, 0.5);
+}
+
+.el2 {
+    background: rgba(255, 0, 0, 0.5);
+    grid-column-start: 1;
+    grid-column-end:  3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.el3 {
+    background: rgba(0, 128, 0, 0.5);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: row1-start;
+    grid-row-end: third-line;
+    z-index: 12;
+
+}
+
+.el4 {
+    background: rgba(0, 4, 255, 0.5);
+
+}
