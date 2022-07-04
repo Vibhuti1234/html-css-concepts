@@ -15,6 +15,9 @@ main{
 
 .signup-form{
     padding: 1rem;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
 }
 .signup-form label{
     font-weight: bolder;
@@ -89,10 +92,21 @@ padding: 0.2rem 0.5rem;
     color: aquamarine;
     
 } */
-@media{
+@media (min-width: 40rem) {
     .signup-form{
         margin: auto;
-        width: 25rem;
+        width: 30rem;
+        grid-template-columns: 10rem auto;
+        row-gap: 1rem;
+        column-gap: 0.5rem;
+    }
+    .signup_form_checkbox{
+        grid-column: span 2;
+    }
+    #title{
+        
+        grid-column: span 2;
     }
 
 }
+
