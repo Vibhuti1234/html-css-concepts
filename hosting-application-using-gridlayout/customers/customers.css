@@ -18,11 +18,14 @@
       vertical-align: middle;
       box-shadow: 3px 3px 3px rgba(86, 236, 17, 0.5);
       max-width: 556px;
+      transform: skewX(20deg);
+      overflow: hidden;
   }
 
   .testimonial__image{
       width: 100%;
       vertical-align: top;
+      transform: skewX(-20deg) scaleX(1.3);
   
 
     
